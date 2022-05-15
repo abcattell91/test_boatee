@@ -33,6 +33,31 @@
   grid-gap: 24px;
 }
 
+.icon-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 8px;
+  font-size: 24px;
+}
+.remove-button {
+  justify-content: end;
+  text-align: end;
+  color: red;
+  text-decoration: none;
+  margin: 10px;
+}
+
+
+.card-img-top {
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+
+
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .cards {
