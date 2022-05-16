@@ -1,5 +1,5 @@
 class Boat < ApplicationRecord
-  has_many :bookings
+  has_many :bookings, dependent: :destroy
 
   BOAT_CATEGORIES = %w[Bracera Banana-Boat Barge Dinghy Pedalo Punt Yacht Ship Catamaran Hovercraft]
   validates :name, :location, :price, :image_url, presence: true
