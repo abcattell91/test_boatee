@@ -30,6 +30,8 @@ gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'mast
 # devise
 gem 'devise'
 
+gem "geocoder"
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 

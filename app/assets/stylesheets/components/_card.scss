@@ -2,7 +2,12 @@
   margin: 0 auto;
   padding: 32px;
 }
-
+.card-category-img {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 200px;
+}
 .card-category {
   background-size: cover;
   background-position: center;
@@ -31,6 +36,13 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 24px;
+}
+.home-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 24px;
+  height: 200px;
+  width: 200px;
 }
 
 .icon-1 {

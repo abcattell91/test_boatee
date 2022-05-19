@@ -2,9 +2,19 @@
   <div class="container">
     <h1>BOATEE</h1>
     <p>Discover a new world of travel</p>
-    <%= link_to 'Discover', boats_path, class: "btn btn-primary btn-lg" %>
+    <%= link_to 'Hire Today!', boats_path, class: "btn btn-primary btn-lg" %>
   </div>
 </div>
 
+
+<section class="Home-cards">
+    <h2 class="Header-card">Recently Added Boats</h2>
+    <div class="home-cards">
+      <% @boats.each do |boat| %>
+          <%= render 'shared/card', boat: boat %>
+
+      <% end %>
+      </div>
+</section>
 
 <%= render 'shared/footer' %>

@@ -3,7 +3,7 @@
   <div class="row row-cols-1 row-cols-md-3 mt-3">
   <% @bookings.each do |booking|%>
     <div class="col-md-4 mb-4">
-      <div class="card-img-top h-100 img-thumbnail mb-2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%=booking.boat.image_url%>)">
+      <div class="card-image-top boat-image h-100 img-thumbnail mb-2" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(<%=booking.boat.image_url%>)">
         <div class="card-body">
           <h1><%=link_to booking.boat.name, booking_path(booking), class: "card-text" %></h1>
           <p class="card-text"><%= booking.start_date.strftime("%d-%m-%Y") %> - <%= booking.end_date.strftime("%d-%m-%Y") %></p>
